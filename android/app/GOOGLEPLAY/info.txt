@@ -1,0 +1,3 @@
+storePassword: HydrateMe2024
+alias: HydrateMe
+keyPassword: hydrateme@2024

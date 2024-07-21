@@ -4,7 +4,7 @@ class TextError extends StatelessWidget {
   final String msg;
 
 
-  TextError(this.msg);
+  const TextError(this.msg, {super.key});
 
   @override
   Widget build(BuildContext context) {

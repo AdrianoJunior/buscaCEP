@@ -5,8 +5,9 @@ alert(BuildContext context, String msg, {Function()? callback, String text = 'OK
     context: context,
     barrierDismissible: false,
     builder: (context) {
-      return WillPopScope(
-        onWillPop: () async => false,
+      return PopScope(
+        canPop: true,
+        onPopInvoked: (willPop) => false,
         child: AlertDialog(
           title: const Text("Busca CEP"),
           content: Text(msg),

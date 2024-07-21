@@ -12,6 +12,8 @@ import 'package:flutter/material.dart';
 import 'ceps_list_view.dart';
 
 class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -88,7 +90,7 @@ class _HomePageState extends State<HomePage> {
                     return TextError("Não foi possivel recuperar os dados.");
                   } else if (!snapshot.hasData) {
                     return const Center(
-                      child: SizedBox(/*child: CircularProgressIndicator()*/),
+                      child: SizedBox(child: CircularProgressIndicator()),
                     );
                   }
 

@@ -16,7 +16,7 @@ class AppText extends StatelessWidget {
 
   AppText(
       this.label,
-      this.hint, {
+      this.hint, {super.key,
         this.password = false,
         this.controller,
         this.validator,

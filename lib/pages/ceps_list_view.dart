@@ -7,9 +7,9 @@ import 'package:parse_server_sdk_flutter/parse_server_sdk_flutter.dart';
 
 
 class CepsListView extends StatelessWidget {
-  CepsListView(this.ceps);
+  const CepsListView(this.ceps, {super.key});
 
-  List<CEP>? ceps;
+  final List<CEP>? ceps;
 
   @override
   Widget build(BuildContext context) {
